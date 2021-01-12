@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
+    "aws-sdk": "^2.811.0",
+    "bcrypt": "^5.0.0",
+    "client-oauth2": "^4.3.3",
+    "cloudinary": "^1.23.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.9.13",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "node-mailjet": "^3.3.1",
+    "nodemailer": "^6.4.16",
+    "nodemailer-mailgun-transport": "^2.0.2",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemailer-ses-transport": "^1.5.1",
+    "pdfkit": "^0.11.0",
+    "xmlhttprequest": "^1.8.0",
+    "xoauth2": "^1.2.0"
+  }
+}
