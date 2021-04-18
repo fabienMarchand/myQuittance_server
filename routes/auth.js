@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
-const mailSend = require("../config/mail");
+//const mailSend = require("../config/mail");
 const salt = 10;
 
 router.post("/signin", (req, res, next) => {

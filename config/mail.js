@@ -14,7 +14,7 @@ var nodemailerMailgun = nodemailer.createTransport(mg(auth));
 
 
 nodemailerMailgun.sendMail({
-  from: 'bbundy2@msn.com',
+  from: 'marchaf@gmail.com',
   to: 'marchaf@gmail.com', // An array if you have multiple recipients.
   subject: 'Hey you, awesome!',
   text: 'Mailgun rocks, pow pow!',
@@ -22,7 +22,7 @@ nodemailerMailgun.sendMail({
  /// html: '<h1>YOUUUHOUUUU!!!</h1>',
 }, function (err, info) {
   if (err) {
-    console.error('Pouet mail: ' + err);
+    console.error('Error: ' + err);
   }
   else {
     console.log('Response: ' + info);

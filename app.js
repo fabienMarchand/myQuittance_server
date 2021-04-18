@@ -1,6 +1,6 @@
 require("dotenv").config();
 require("./config/dbConnection");
-require("./config/mail");
+//require("./config/mail");
 
 const express = require("express");
 const path = require("path");

@@ -17,10 +17,11 @@ router.get("/", async (req, res, next) => {
 router.post("/", async(req, res, next) => {
     const {rent, provision,  fixedCost, socialSupport} = req.body;
     const golbalCost = (rent + provision + fixedCost - socialSupport);
-   
+    if (!golbalCost) golbalCost = 0;
+    if (!socialSupport) socialSupport = 0;
     let newReceipt =  { ...req.body, golbalCost,userId: req.session.currentUser};
-    console.log("newReceipt>>>>>>>> ", newReceipt, "<<<<\r\n");
     try{
+        
         const dbResult = await Receipt.create(newReceipt);
         res.status(201).json(dbResult);
     }catch(error) {
